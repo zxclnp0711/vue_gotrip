@@ -1,16 +1,20 @@
 <template>
-  <div class="">
-    hello world
+  <div class="home">
+    <home-header></home-header>
   </div>
 </template>
 <script>
+import HomeHeader from '../components/Header'
 export default {
   data () {
     return {
     }
   },
   created () {},
-  methods: {}
+  methods: {},
+  components: {
+    HomeHeader
+  }
 }
 </script>
 <style lang="less" scoped>
