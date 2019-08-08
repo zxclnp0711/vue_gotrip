@@ -1,7 +1,7 @@
 <template>
   <div class="wrapper">
     <swiper :options="swiperOption">
-      <swiper-slide v-for="item in swiperList"
+      <swiper-slide v-for="item in list"
                     :key="item.id">
         <img class="swiper-img"
              :src="item.imgUrl" />
@@ -17,15 +17,11 @@ export default {
     return {
       swiperOption: {
         pagination: '.swiper-pagination'
-      },
-      swiperList: [{
-        id: '0001',
-        imgUrl: require('../assets/images/1.jpg')
-      }, {
-        id: '0002',
-        imgUrl: require('../assets/images/2.jpg')
-      }]
+      }
     }
+  },
+  props: {
+    list: Array
   },
   created () { },
   methods: {}
@@ -39,7 +35,7 @@ export default {
   overflow: hidden;
   width: 100%;
   height: 0;
-  padding-bottom: 26.66%;
+  padding-bottom: 31.25%;
   background: #eee;
   .swiper-img {
     width: 100%;

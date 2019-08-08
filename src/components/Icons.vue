@@ -25,52 +25,18 @@ export default {
       swiperOption: {
         pagination: '.swiper-pagination',
         autoplay: false
-      },
-      iconList: [{
-        id: '0001',
-        imgUrl: require('../assets/upload/1.png'),
-        desc: '景点门票'
-      }, {
-        id: '0002',
-        imgUrl: require('../assets/upload/2.png'),
-        desc: '天门山公园'
-      }, {
-        id: '0003',
-        imgUrl: require('../assets/upload/3.png'),
-        desc: '长沙必游'
-      }, {
-        id: '0004',
-        imgUrl: require('../assets/upload/4.png'),
-        desc: '夏日漂流'
-      }, {
-        id: '0005',
-        imgUrl: require('../assets/upload/5.png'),
-        desc: '一日游'
-      }, {
-        id: '0006',
-        imgUrl: require('../assets/upload/6.png'),
-        desc: '动植物园'
-      }, {
-        id: '0007',
-        imgUrl: require('../assets/upload/7.png'),
-        desc: '自然风光'
-      }, {
-        id: '0008',
-        imgUrl: require('../assets/upload/8.png'),
-        desc: '湘西凤凰'
-      }, {
-        id: '0009',
-        imgUrl: require('../assets/upload/8.png'),
-        desc: '湘西凤凰'
-      }]
+      }
     }
+  },
+  props: {
+    list: Array
   },
   created () { },
   methods: {},
   computed: {
     pages () {
       const pages = []
-      this.iconList.forEach((item, index) => {
+      this.list.forEach((item, index) => {
         const page = Math.floor(index / 8)
         if (!pages[page]) {
           pages[page] = []

@@ -18,44 +18,44 @@ export default {
     return {
     }
   },
-  created () {},
+  created () { },
   methods: {}
 }
 </script>
 <style lang="less" scoped>
-@import '../assets/styles/varibles.less';
+@import "../assets/styles/varibles.less";
 .header {
   display: flex;
-  height: .86rem;
-  line-height: .86rem;
+  height: 0.86rem;
+  line-height: 0.86rem;
   background-color: @bgColor;
   color: #fff;
   .header-left {
-    width: .64rem;
+    width: 0.64rem;
     float: left;
     .back-icon {
       text-align: center;
-      font-size: .4rem;
+      font-size: 0.4rem;
     }
   }
   .header-input {
     flex: 1;
-    height: .64rem;
-    margin-left: .2rem;
-    margin-top: .12rem;
+    height: 0.64rem;
+    margin-left: 0.2rem;
+    margin-top: 0.12rem;
     background: #fff;
-    border-radius: .1rem;
+    border-radius: 0.1rem;
     color: #ccc;
-    line-height: .64rem;
-    padding-left: .2rem;
+    line-height: 0.64rem;
+    padding-left: 0.2rem;
   }
   .header-right {
     width: 1.24rem;
     float: right;
     text-align: center;
     .arrow-icon {
-      font-size: .24rem;
-      margin-left: -.04rem;
+      font-size: 0.24rem;
+      margin-left: -0.04rem;
     }
   }
 }

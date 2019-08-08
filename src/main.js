@@ -7,7 +7,9 @@ import './assets/styles/reset.css'
 import './assets/styles/border.css'
 import './assets/styles/iconfont.css'
 import fastClick from 'fastclick'
+import axios from 'axios'
 
+Vue.prototype.$axios = axios
 Vue.use(VueAwesomeSwiper)
 Vue.config.productionTip = false
 fastClick.attach(document.body)
