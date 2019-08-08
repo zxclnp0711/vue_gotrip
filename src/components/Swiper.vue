@@ -1,11 +1,14 @@
 <template>
   <div class="wrapper">
     <swiper :options="swiperOption">
-    <swiper-slide v-for="item in swiperList" :key="item.id">
-      <img class="swiper-img" :src="item.imgUrl" />
-    </swiper-slide>
-    <div class="swiper-pagination"  slot="pagination"></div>
-  </swiper>
+      <swiper-slide v-for="item in swiperList"
+                    :key="item.id">
+        <img class="swiper-img"
+             :src="item.imgUrl" />
+      </swiper-slide>
+      <div class="swiper-pagination"
+           slot="pagination"></div>
+    </swiper>
   </div>
 </template>
 <script>
@@ -18,13 +21,13 @@ export default {
       swiperList: [{
         id: '0001',
         imgUrl: require('../assets/images/1.jpg')
-      },{
+      }, {
         id: '0002',
         imgUrl: require('../assets/images/2.jpg')
       }]
     }
   },
-  created () {},
+  created () { },
   methods: {}
 }
 </script>
@@ -38,7 +41,7 @@ export default {
   height: 0;
   padding-bottom: 26.66%;
   background: #eee;
-  .swiper-img{
+  .swiper-img {
     width: 100%;
   }
 }
