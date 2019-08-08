@@ -13,7 +13,6 @@ import HomeSwiper from '../components/home/Swiper'
 import HomeIcons from '../components/home/Icons'
 import HomeRecommend from '../components/home/Recommend'
 import HomeWeekend from '../components/home/Weekend'
-// import axios from 'axios'
 export default {
   data () {
     return {
