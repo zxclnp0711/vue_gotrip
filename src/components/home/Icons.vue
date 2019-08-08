@@ -49,8 +49,8 @@ export default {
 }
 </script>
 <style lang="less" scoped>
-@import "../assets/styles/varibles.less";
-@import "../assets/styles/mixins.less";
+@import "../../assets/styles/varibles.less";
+@import "../../assets/styles/mixins.less";
 .icons /deep/ .swiper-container {
   height: 0;
   padding-bottom: 50%;
