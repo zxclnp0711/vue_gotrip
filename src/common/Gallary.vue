@@ -17,16 +17,6 @@
 <script>
 export default {
   name: 'Gallary',
-  data () {
-    return {
-      swiperOptions: {
-        pagination: '.swiper-pagination',
-        paginationType: 'fraction',
-        observeParents: true,
-        observe: true
-      }
-    }
-  },
   props: {
     imgs: {
       type: Array,
@@ -35,7 +25,16 @@ export default {
       }
     }
   },
-  created () { },
+  data () {
+    return {
+      swiperOptions: {
+        pagination: '.swiper-pagination',
+        paginationType: 'fraction',
+        observeParents: true,
+        observer: true
+      }
+    }
+  },
   methods: {
     handleGallaryClick () {
       this.$emit('close')
