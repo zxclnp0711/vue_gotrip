@@ -8,20 +8,25 @@
       输入城市/景点/游玩/主题</div>
     <router-link to="/city">
       <div class="header-right">
-        城市
+        {{this.city}}
         <span class="iconfont arrow-icon">&#xe64a;</span>
       </div>
     </router-link>
   </div>
 </template>
 <script>
+import { mapState, mapGetters } from 'vuex'
 export default {
   data () {
     return {
     }
   },
   created () { },
-  methods: {}
+  methods: {},
+  computed: {
+    ...mapState(['city']),
+    ...mapGetters(['doubleCity'])
+  }
 }
 </script>
 <style lang="less" scoped>
@@ -52,7 +57,9 @@ export default {
     padding-left: 0.2rem;
   }
   .header-right {
-    width: 1.24rem;
+    box-sizing: border-box;
+    min-width: 1.04rem;
+    padding: 0.1rem;
     float: right;
     text-align: center;
     color: #fff;
