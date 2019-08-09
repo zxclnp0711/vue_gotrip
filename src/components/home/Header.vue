@@ -15,7 +15,7 @@
   </div>
 </template>
 <script>
-import { mapState, mapGetters } from 'vuex'
+import { mapState } from 'vuex'
 export default {
   data () {
     return {
@@ -24,8 +24,7 @@ export default {
   created () { },
   methods: {},
   computed: {
-    ...mapState(['city']),
-    ...mapGetters(['doubleCity'])
+    ...mapState(['city'])
   }
 }
 </script>
