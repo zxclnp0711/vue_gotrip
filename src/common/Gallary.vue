@@ -16,6 +16,7 @@
 </template>
 <script>
 export default {
+  name: 'Gallary',
   data () {
     return {
       swiperOptions: {
