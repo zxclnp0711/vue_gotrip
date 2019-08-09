@@ -51,7 +51,7 @@ export default {
   .banner-info {
     position: absolute;
     background-image: linear-gradient(
-      to top,
+      to bottom,
       rgba(0, 0, 0, 0),
       rgba(0, 0, 0, 0.8)
     );
