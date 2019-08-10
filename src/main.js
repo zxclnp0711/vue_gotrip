@@ -9,6 +9,7 @@ import './assets/styles/iconfont.css'
 import fastClick from 'fastclick'
 import axios from 'axios'
 import store from './store/index'
+import 'babel-polyfill'
 
 Vue.prototype.$axios = axios
 Vue.use(VueAwesomeSwiper)
